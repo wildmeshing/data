@@ -1,0 +1,21 @@
+ellipse_01_substructure.hdf5
+	2D TriMesh
+	face attribute "tag" with values 0 and 1
+
+ellipse_02_substructure_regular.hdf5
+	2D TriMesh
+	face attribute "tag" with values 0 and 1
+	edge attribute "edge_tag" with values
+		0: default
+		2: input
+		3: offset layer
+
+ellipse_03_layer.hdf5
+	same as ellipse_02_substructure_regular.hdf5
+	face attribute "tag" with values:
+		0: default / inside ellipse
+		1: outside ellipse
+		3: layer
+	edge attribute "edge_transfer_union" with values
+		0: default
+		1: "edge_tag" contains a different value than 0
