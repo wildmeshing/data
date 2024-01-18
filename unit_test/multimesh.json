@@ -1,0 +1,57 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/camel.msh",
+                "name": "mesh"
+            }
+        },
+        {
+            "input": {
+                "file": "meshes/cameluv.msh",
+                "ignore_z": true,
+                "name": "uv"
+            }
+        },
+        {
+            "multimesh": {
+                "child": "uv",
+                "name": "mm",
+                "parent": "mesh"
+            }
+        },
+        {
+            "get_all_meshes": {
+                "input": "mm",
+                "name": "meshes"
+            }
+        }
+    ],
+    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/multimesh.json",
+    "settings": {
+        "log_level": 5,
+        "opt_log_level": 5
+    },
+    "tests": {
+        "edges": [
+            5607,
+            5607
+        ],
+        "faces": [
+            3576,
+            3576
+        ],
+        "meshes": [
+            "meshes_",
+            "meshes_0"
+        ],
+        "tetrahedra": [
+            0,
+            0
+        ],
+        "vertices": [
+            2032,
+            2032
+        ]
+    }
+}

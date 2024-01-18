@@ -1,0 +1,56 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/camel.msh",
+                "name": "mesh"
+            }
+        },
+        {
+            "input": {
+                "file": "meshes/cameluv.msh",
+                "name": "uv",
+                "ignore_z": true
+            }
+        },
+        {
+            "multimesh": {
+                "parent": "mesh",
+                "child": "uv",
+                "name": "mm"
+            }
+        },
+        {
+            "isotropic_remeshing": {
+                "input": "mm",
+                "output": "test",
+                "lock_boundary": true,
+                "attributes": {
+                    "position": "vertices",
+                    "other_positions": {
+                        "name": "vertices",
+                        "mesh": "mm.uv"
+                    },
+                    "inversion_position": {
+                        "name": "vertices",
+                        "mesh": "mm.uv"
+                    }
+                },
+                "iterations": 10,
+                "length_rel": 1
+            }
+        },
+        {
+            "get_all_meshes": {
+                "input": "test",
+                "name": "meshes"
+            }
+        }
+    ],
+    "tests": {
+        "meshes": [
+            "meshes_",
+            "meshes_0"
+        ]
+    }
+}

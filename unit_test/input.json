@@ -1,0 +1,32 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/small.msh",
+                "name": "mesh"
+            }
+        }
+    ],
+    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/input.json",
+    "settings": {
+        "log_level": 5,
+        "opt_log_level": 5
+    },
+    "tests": {
+        "edges": [
+            183
+        ],
+        "faces": [
+            108
+        ],
+        "meshes": [
+            "mesh"
+        ],
+        "tetrahedra": [
+            0
+        ],
+        "vertices": [
+            71
+        ]
+    }
+}

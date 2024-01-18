@@ -1,0 +1,44 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/camel.msh",
+                "name": "mesh"
+            }
+        },
+        {
+            "isotropic_remeshing": {
+                "attributes": {
+                    "position": "vertices"
+                },
+                "input": "mesh",
+                "iterations": 10,
+                "length_rel": 1,
+                "lock_boundary": true,
+                "output": "test"
+            }
+        }
+    ],
+    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/isotropic_remeshing.json",
+    "settings": {
+        "log_level": 5,
+        "opt_log_level": 5
+    },
+    "tests": {
+        "edges": [
+            1014
+        ],
+        "faces": [
+            514
+        ],
+        "meshes": [
+            "test"
+        ],
+        "tetrahedra": [
+            0
+        ],
+        "vertices": [
+            501
+        ]
+    }
+}
