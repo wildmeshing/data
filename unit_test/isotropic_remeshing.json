@@ -17,6 +17,15 @@
                 "lock_boundary": true,
                 "output": "test"
             }
+        },
+        {
+            "output": {
+                "input": "test",
+                "file": "isotropic",
+                "attributes": {
+                    "position": "vertices"
+                }
+            }
         }
     ],
     "settings": {

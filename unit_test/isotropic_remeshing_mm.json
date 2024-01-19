@@ -15,6 +15,7 @@
         },
         {
             "multimesh": {
+                "type": "uv",
                 "child": "uv",
                 "name": "mm",
                 "parent": "mesh"
@@ -44,6 +45,24 @@
             "get_all_meshes": {
                 "input": "test",
                 "name": "meshes"
+            }
+        },
+        {
+            "output": {
+                "input": "meshes_",
+                "file": "isotropic_mm_",
+                "attributes": {
+                    "position": "vertices"
+                }
+            }
+        },
+        {
+            "output": {
+                "input": "meshes_0",
+                "file": "isotropic_mm_0",
+                "attributes": {
+                    "position": "vertices"
+                }
             }
         }
     ],

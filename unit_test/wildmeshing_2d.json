@@ -1,0 +1,22 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/2dmesh.msh",
+                "name": "mesh",
+                "ignore_z": true
+            }
+        },
+        {
+            "wildmeshing": {
+                "passes": 10,
+                "input": "mesh",
+                "target_edge_length": 0.01,
+                "intermediate_output": true,
+                "attributes": {
+                    "position": "vertices"
+                },
+            }
+        }
+    ]
+}

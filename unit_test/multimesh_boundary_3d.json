@@ -2,47 +2,40 @@
     "components": [
         {
             "input": {
-                "file": "meshes/camel.msh",
+                "file": "meshes/sphere_coarse.msh",
                 "name": "mesh"
             }
         },
         {
-            "input": {
-                "file": "meshes/cameluv.msh",
-                "ignore_z": true,
-                "name": "uv"
-            }
-        },
-        {
             "multimesh": {
-                "type": "uv",
-                "child": "uv",
-                "name": "mm",
-                "parent": "mesh"
+                "mesh": "mesh",
+                "name": "mutilmesh",
+                "position": "vertices",
+                "type": "boundary"
             }
         },
         {
             "get_all_meshes": {
-                "input": "mm",
+                "input": "mutilmesh",
                 "name": "meshes"
             }
         },
         {
             "output": {
-                "input": "meshes_",
-                "file": "meshes_",
                 "attributes": {
                     "position": "vertices"
-                }
+                },
+                "file": "mm_",
+                "input": "meshes_"
             }
         },
         {
             "output": {
-                "input": "meshes_0",
-                "file": "meshes_0",
                 "attributes": {
                     "position": "vertices"
-                }
+                },
+                "file": "mm_0",
+                "input": "meshes_0"
             }
         }
     ],
@@ -52,24 +45,24 @@
     },
     "tests": {
         "edges": [
-            5607,
-            5607
+            6106,
+            1389
         ],
         "faces": [
-            3576,
-            3576
+            9689,
+            926
         ],
         "meshes": [
             "meshes_",
             "meshes_0"
         ],
         "tetrahedra": [
-            0,
+            4613,
             0
         ],
         "vertices": [
-            2032,
-            2032
+            1031,
+            465
         ]
     }
 }
