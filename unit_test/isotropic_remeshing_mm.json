@@ -66,10 +66,6 @@
             }
         }
     ],
-    "settings": {
-        "log_level": 5,
-        "opt_log_level": 5
-    },
     "tests": {
         "edges": [
             4212,
