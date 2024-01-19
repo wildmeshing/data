@@ -3,19 +3,45 @@
         {
             "input": {
                 "file": "meshes/2dmesh.msh",
-                "name": "mesh",
+                "name": "input",
                 "ignore_z": true
             }
         },
         {
+            "multimesh": {
+                "mesh": "input",
+                "name": "main_mesh",
+                "position": "vertices",
+                "type": "boundary"
+            }
+        },
+        {
+            "get_all_meshes": {
+                "input": "main_mesh",
+                "name": "tmp"
+            }
+        },
+        {
             "wildmeshing": {
-                "passes": 10,
-                "input": "mesh",
-                "target_edge_length": 0.01,
-                "intermediate_output": true,
+                "input": "main_mesh",
                 "attributes": {
                     "position": "vertices"
                 },
+                "output": "triwild",
+                "envelopes": [
+                    {
+                        "geometry": {
+                            "mesh": "tmp_0",
+                            "name": "vertices"
+                        },
+                        "thickness": 1e-3,
+                        "constrained_position": {
+                            "mesh": "main_mesh.is_boundary",
+                            "name": "vertices"
+                        }
+                    }
+                ],
+                "target_edge_length": 0.01
             }
         }
     ]
