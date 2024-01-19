@@ -9,35 +9,35 @@
         {
             "input": {
                 "file": "meshes/cameluv.msh",
-                "name": "uv",
-                "ignore_z": true
+                "ignore_z": true,
+                "name": "uv"
             }
         },
         {
             "multimesh": {
-                "parent": "mesh",
                 "child": "uv",
-                "name": "mm"
+                "name": "mm",
+                "parent": "mesh"
             }
         },
         {
             "isotropic_remeshing": {
-                "input": "mm",
-                "output": "test",
-                "lock_boundary": true,
                 "attributes": {
-                    "position": "vertices",
-                    "other_positions": {
-                        "name": "vertices",
-                        "mesh": "mm.uv"
-                    },
                     "inversion_position": {
-                        "name": "vertices",
-                        "mesh": "mm.uv"
-                    }
+                        "mesh": "mm.uv",
+                        "name": "vertices"
+                    },
+                    "other_positions": {
+                        "mesh": "mm.uv",
+                        "name": "vertices"
+                    },
+                    "position": "vertices"
                 },
-                "iterations": 10,
-                "length_rel": 1
+                "input": "mm",
+                "iterations": 1,
+                "length_rel": 1,
+                "lock_boundary": true,
+                "output": "test"
             }
         },
         {
@@ -47,10 +47,30 @@
             }
         }
     ],
+    "settings": {
+        "log_level": 5,
+        "opt_log_level": 5
+    },
     "tests": {
+        "edges": [
+            4212,
+            4212
+        ],
+        "faces": [
+            2646,
+            2646
+        ],
         "meshes": [
             "meshes_",
             "meshes_0"
+        ],
+        "tetrahedra": [
+            0,
+            0
+        ],
+        "vertices": [
+            1567,
+            1567
         ]
     }
 }
