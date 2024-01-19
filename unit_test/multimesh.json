@@ -27,7 +27,6 @@
             }
         }
     ],
-    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/multimesh.json",
     "settings": {
         "log_level": 5,
         "opt_log_level": 5

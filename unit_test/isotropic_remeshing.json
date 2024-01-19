@@ -12,24 +12,23 @@
                     "position": "vertices"
                 },
                 "input": "mesh",
-                "iterations": 10,
+                "iterations": 2,
                 "length_rel": 1,
                 "lock_boundary": true,
                 "output": "test"
             }
         }
     ],
-    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/isotropic_remeshing.json",
     "settings": {
         "log_level": 5,
         "opt_log_level": 5
     },
     "tests": {
         "edges": [
-            1014
+            3243
         ],
         "faces": [
-            514
+            2000
         ],
         "meshes": [
             "test"
@@ -38,7 +37,7 @@
             0
         ],
         "vertices": [
-            501
+            1244
         ]
     }
 }

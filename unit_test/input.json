@@ -7,7 +7,6 @@
             }
         }
     ],
-    "root_path": "/Users/teseo/data/wildmeshing/wildmeshing-toolkit/data/unit_test/input.json",
     "settings": {
         "log_level": 5,
         "opt_log_level": 5
