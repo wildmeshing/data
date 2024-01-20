@@ -2,8 +2,7 @@
     "components": [
         {
             "input": {
-                "file": "meshes/2dmesh.msh",
-                "ignore_z": true,
+                "file": "meshes/sphere_coarse.msh",
                 "name": "input"
             }
         },
@@ -40,7 +39,7 @@
                     }
                 ],
                 "input": "main_mesh",
-                "output": "triwild",
+                "output": "tetwild",
                 "pass_through": [
                     "is_boundary"
                 ],
@@ -49,7 +48,7 @@
         },
         {
             "get_all_meshes": {
-                "input": "triwild",
+                "input": "tetwild",
                 "name": "meshes"
             }
         },
@@ -58,7 +57,7 @@
                 "attributes": {
                     "position": "vertices"
                 },
-                "file": "surface",
+                "file": "volume",
                 "input": "meshes_"
             }
         },
@@ -67,31 +66,31 @@
                 "attributes": {
                     "position": "vertices"
                 },
-                "file": "edges",
+                "file": "surface",
                 "input": "meshes_0"
             }
         }
     ],
     "tests": {
         "edges": [
-            7941,
-            270
+            17559,
+            3360
         ],
         "faces": [
-            5204,
-            0
+            27778,
+            2240
         ],
         "meshes": [
             "meshes_",
             "meshes_0"
         ],
         "tetrahedra": [
-            0,
+            13329,
             0
         ],
         "vertices": [
-            2738,
-            270
+            3111,
+            1122
         ]
     }
 }
