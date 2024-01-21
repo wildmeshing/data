@@ -1,0 +1,53 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/small3d.msh",
+                "name": "mesh"
+            }
+        },
+        {
+            "to_points": {
+                "add_box": true,
+                "box_scale": 1.5,
+                "input": "mesh",
+                "name": "points",
+                "position": "vertices"
+            }
+        },
+        {
+            "delaunay": {
+                "cell_dimension": 3,
+                "input": "points",
+                "output": "tets",
+                "position": "vertices"
+            }
+        },
+        {
+            "output": {
+                "attributes": {
+                    "position": "vertices"
+                },
+                "file": "tets",
+                "input": "tets"
+            }
+        }
+    ],
+    "tests": {
+        "edges": [
+            444
+        ],
+        "faces": [
+            726
+        ],
+        "meshes": [
+            "tets"
+        ],
+        "tetrahedra": [
+            360
+        ],
+        "vertices": [
+            79
+        ]
+    }
+}
