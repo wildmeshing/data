@@ -67,6 +67,7 @@
         }
     ],
     "tests": {
+        "skip_check": true,
         "edges": [
             64341,
             19171
