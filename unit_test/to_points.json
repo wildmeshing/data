@@ -1,0 +1,43 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/small3d.msh",
+                "name": "mesh"
+            }
+        },
+        {
+            "to_points": {
+                "input": "mesh",
+                "name": "points",
+                "position": "vertices"
+            }
+        },
+        {
+            "output": {
+                "attributes": {
+                    "position": "vertices"
+                },
+                "file": "points",
+                "input": "points"
+            }
+        }
+    ],
+    "tests": {
+        "edges": [
+            0
+        ],
+        "faces": [
+            0
+        ],
+        "meshes": [
+            "points"
+        ],
+        "tetrahedra": [
+            0
+        ],
+        "vertices": [
+            71
+        ]
+    }
+}
