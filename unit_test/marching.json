@@ -18,7 +18,13 @@
                     1
                 ],
                 "output": "output_mesh",
-                "output_value": 2
+                "output_value": 2,
+                "weight": 0.1,
+                "filter_values": [],
+                "pass_through": [
+                    "tag",
+                    "vertices"
+                ]
             }
         }
     ],
