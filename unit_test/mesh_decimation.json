@@ -1,0 +1,40 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/sphere_regularized.hdf5",
+                "name": "input_mesh"
+            }
+        },
+        {
+            "mesh_decimation": {
+                "cell_constrait_tag_name": "tag",
+                "constrait_value": 1,
+                "input": "input_mesh",
+                "output": "output_mesh",
+                "pass_through": [
+                    "vertices",
+                    "tag"
+                ],
+                "target_len": 5.0
+            }
+        }
+    ],
+    "tests": {
+        "edges": [
+            7240
+        ],
+        "faces": [
+            11663
+        ],
+        "meshes": [
+            "output_mesh"
+        ],
+        "tetrahedra": [
+            5566
+        ],
+        "vertices": [
+            1144
+        ]
+    }
+}
