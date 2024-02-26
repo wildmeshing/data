@@ -8,33 +8,32 @@
         },
         {
             "mesh_decimation": {
-                "cell_constrait_tag_name": "tag",
-                "constrait_value": 1,
-                "input": "input_mesh",
-                "output": "output_mesh",
-                "pass_through": [
+                "attributes": [
                     "vertices",
                     "tag"
                 ],
+                "cell_constrait_tag_name": "tag",
+                "input": "input_mesh",
+                "output": "output_mesh",
                 "target_len": 5.0
             }
         }
     ],
     "tests": {
         "edges": [
-            7240
+            5799
         ],
         "faces": [
-            11663
+            9161
         ],
         "meshes": [
             "output_mesh"
         ],
         "tetrahedra": [
-            5566
+            4315
         ],
         "vertices": [
-            1144
+            954
         ]
     }
 }
