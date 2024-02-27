@@ -21,19 +21,19 @@
     ],
     "tests": {
         "edges": [
-            5799
+            19529
         ],
         "faces": [
-            9161
+            32897
         ],
         "meshes": [
             "output_mesh"
         ],
         "tetrahedra": [
-            4315
+            16183
         ],
         "vertices": [
-            954
+            2816
         ]
     }
 }
