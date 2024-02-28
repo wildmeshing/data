@@ -12,7 +12,7 @@
                     "vertices",
                     "tag"
                 ],
-                "cell_constrait_tag_name": "tag",
+                "cell_constraint_tag_name": "tag",
                 "input": "input_mesh",
                 "output": "output_mesh",
                 "target_len": 5.0
