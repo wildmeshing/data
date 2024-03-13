@@ -1,0 +1,48 @@
+{
+    "components": [
+        {
+            "input": {
+                "file": "meshes/sphere_regularized.hdf5",
+                "name": "input_mesh"
+            }
+        },
+        {
+            "marching": {
+                "attributes": {
+                    "filter_labels": [],
+                    "vertex_label": "vertex_tag"
+                },
+                "input": "input_mesh",
+                "input_values": [
+                    0,
+                    1
+                ],
+                "output": "output_mesh",
+                "output_value": 2,
+                "weight": 0.1,
+                "filter_values": [],
+                "pass_through": [
+                    "tag",
+                    "vertices"
+                ]
+            }
+        }
+    ],
+    "tests": {
+        "edges": [
+            39603
+        ],
+        "faces": [
+            67411
+        ],
+        "meshes": [
+            "output_mesh"
+        ],
+        "tetrahedra": [
+            33440
+        ],
+        "vertices": [
+            5633
+        ]
+    }
+}
