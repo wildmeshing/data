@@ -2,7 +2,7 @@ import meshio as mio
 import glob
 import igl
 
-for ext in [".obj", ".ply", ".stl"]:
+for ext in [".obj", ".ply", ".stl", ".off"]:
     for file in glob.glob(f"./**/*{ext}", recursive=True):
         if ext == ".obj":
             v, f = igl.read_triangle_mesh(file)
