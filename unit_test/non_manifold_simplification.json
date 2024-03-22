@@ -1,0 +1,26 @@
+{
+  "components": [
+    {
+      "non_manifold_input": {
+        "name": "mesh",
+        "file": "meshes/hour_glass.msh"
+      }
+    },
+    {
+      "non_manifold_simplification": {
+        "input": "mesh",
+        "output": "output_mesh",
+        "position": "vertices",
+        "length_rel": 100,
+        "envelope_size": 0.001
+      }
+    },
+    {
+      "output": {
+        "input": "mesh",
+        "file": "non_manifold_simplification",
+        "attributes": { "position": "vertices" }
+      }
+    }
+  ]
+}
