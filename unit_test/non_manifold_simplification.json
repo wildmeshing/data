@@ -17,7 +17,7 @@
     },
     {
       "output": {
-        "input": "mesh",
+        "input": "output_mesh",
         "file": "non_manifold_simplification",
         "attributes": { "position": "vertices" }
       }
