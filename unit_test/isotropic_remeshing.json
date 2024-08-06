@@ -1,48 +1,48 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/camel.msh",
-                "name": "mesh"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "meshes/camel.msh",
+        "name": "mesh"
+      }
+    },
+    {
+      "isotropic_remeshing": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "isotropic_remeshing": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "input": "mesh",
-                "iterations": 2,
-                "length_rel": 1,
-                "lock_boundary": true,
-                "output": "test"
-            }
+        "input": "mesh",
+        "iterations": 2,
+        "length_rel": 1,
+        "lock_boundary": true,
+        "output": "test"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "input": "test",
-                "file": "isotropic",
-                "attributes": {
-                    "position": "vertices"
-                }
-            }
-        }
-    ],
-    "tests": {
-        "edges": [
-            3243
-        ],
-        "faces": [
-            2000
-        ],
-        "meshes": [
-            "test"
-        ],
-        "tetrahedra": [
-            0
-        ],
-        "vertices": [
-            1244
-        ]
+        "file": "isotropic",
+        "input": "test"
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      969
+    ],
+    "faces": [
+      484
+    ],
+    "meshes": [
+      "test"
+    ],
+    "tetrahedra": [
+      0
+    ],
+    "vertices": [
+      486
+    ]
+  }
 }
