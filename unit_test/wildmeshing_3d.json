@@ -1,97 +1,123 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/sphere_coarse.msh",
-                "name": "input"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "meshes/sphere_coarse.msh",
+        "name": "input"
+      }
+    },
+    {
+      "multimesh": {
+        "mesh": "input",
+        "name": "main_mesh",
+        "position": "vertices",
+        "type": "boundary"
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "main_mesh",
+        "name": "tmp"
+      }
+    },
+    {
+      "wildmeshing": {
+        "attributes": {
+          "position": "vertices",
+          "replace_double_coordinate": true
         },
-        {
-            "multimesh": {
-                "mesh": "input",
-                "name": "main_mesh",
-                "position": "vertices",
-                "type": "boundary"
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "main_mesh",
-                "name": "tmp"
-            }
-        },
-        {
-            "wildmeshing": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "envelopes": [
-                    {
-                        "constrained_position": {
-                            "mesh": "main_mesh.is_boundary",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "tmp_0",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    }
-                ],
-                "input": "main_mesh",
-                "output": "tetwild",
-                "pass_through": [
-                    "is_boundary"
-                ],
-                "target_edge_length": 0.01
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "tetwild",
-                "name": "meshes"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "volume",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "surface",
-                "input": "meshes_0"
-            }
-        }
-    ],
-    "tests": {
-        "skip_check": true,
-        "edges": [
-            17559,
-            3360
+        "envelopes": [
+          {
+            "constrained_position": {
+              "mesh": "main_mesh.is_boundary",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "tmp_0",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          }
         ],
-        "faces": [
-            27778,
-            2240
+        "input": "main_mesh",
+        "output": "tetwild",
+        "pass_through": [
+          "is_boundary"
         ],
-        "meshes": [
-            "meshes_",
-            "meshes_0"
-        ],
-        "tetrahedra": [
-            13329,
-            0
-        ],
-        "vertices": [
-            3111,
-            1122
-        ]
+        "scheduler_update_frequency": 1000,
+        "target_edge_length": 0.03
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "tetwild",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
+        },
+        "file": "volume",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
+        },
+        "file": "surface",
+        "input": "meshes_0"
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      6106,
+      6106,
+      36663,
+      3192,
+      36663,
+      6106,
+      1389
+    ],
+    "faces": [
+      9689,
+      9689,
+      61050,
+      2128,
+      61050,
+      9689,
+      926
+    ],
+    "meshes": [
+      "input",
+      "main_mesh",
+      "meshes_",
+      "meshes_0",
+      "tetwild",
+      "tmp_",
+      "tmp_0"
+    ],
+    "tetrahedra": [
+      4613,
+      4613,
+      29993,
+      0,
+      29993,
+      4613,
+      0
+    ],
+    "vertices": [
+      1031,
+      1031,
+      5607,
+      1066,
+      5607,
+      1031,
+      465
+    ]
+  }
 }
