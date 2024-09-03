@@ -1,64 +1,64 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/2dmesh.msh",
-                "name": "mesh"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "meshes/2dmesh.msh",
+        "name": "mesh"
+      }
+    },
+    {
+      "multimesh": {
+        "mesh": "mesh",
+        "name": "mutilmesh",
+        "position": "vertices",
+        "type": "boundary"
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "mutilmesh",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "multimesh": {
-                "mesh": "mesh",
-                "name": "mutilmesh",
-                "position": "vertices",
-                "type": "boundary"
-            }
+        "file": "mm_",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "get_all_meshes": {
-                "input": "mutilmesh",
-                "name": "meshes"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "mm_",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "mm_0",
-                "input": "meshes_0"
-            }
-        }
-    ],
-    "tests": {
-        "edges": [
-            1531,
-            104
-        ],
-        "faces": [
-            986,
-            0
-        ],
-        "meshes": [
-            "meshes_",
-            "meshes_0"
-        ],
-        "tetrahedra": [
-            0,
-            0
-        ],
-        "vertices": [
-            546,
-            104
-        ]
+        "file": "mm_0",
+        "input": "meshes_0"
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      1531,
+      104
+    ],
+    "faces": [
+      986,
+      0
+    ],
+    "meshes": [
+      "meshes_",
+      "meshes_0"
+    ],
+    "tetrahedra": [
+      0,
+      0
+    ],
+    "vertices": [
+      546,
+      104
+    ]
+  }
 }

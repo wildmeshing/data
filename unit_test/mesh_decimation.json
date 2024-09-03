@@ -1,39 +1,39 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/sphere_regularized.hdf5",
-                "name": "input_mesh"
-            }
-        },
-        {
-            "mesh_decimation": {
-                "attributes": [
-                    "vertices",
-                    "tag"
-                ],
-                "cell_constraint_tag_name": "tag",
-                "input": "input_mesh",
-                "output": "output_mesh",
-                "target_len": 5.0
-            }
-        }
-    ],
-    "tests": {
-        "edges": [
-            19529
+  "components": [
+    {
+      "input": {
+        "file": "meshes/sphere_regularized.hdf5",
+        "name": "input_mesh"
+      }
+    },
+    {
+      "mesh_decimation": {
+        "attributes": [
+          "vertices",
+          "tag"
         ],
-        "faces": [
-            32897
-        ],
-        "meshes": [
-            "output_mesh"
-        ],
-        "tetrahedra": [
-            16183
-        ],
-        "vertices": [
-            2816
-        ]
+        "cell_constraint_tag_name": "tag",
+        "input": "input_mesh",
+        "output": "output_mesh",
+        "target_len": 5.0
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      19529
+    ],
+    "faces": [
+      32897
+    ],
+    "meshes": [
+      "output_mesh"
+    ],
+    "tetrahedra": [
+      16183
+    ],
+    "vertices": [
+      2816
+    ]
+  }
 }

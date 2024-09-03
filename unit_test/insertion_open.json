@@ -1,92 +1,92 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/open_mesh.msh",
-                "name": "mesh"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "meshes/open_mesh.msh",
+        "name": "mesh"
+      }
+    },
+    {
+      "to_points": {
+        "add_box": true,
+        "box_scale": 1.5,
+        "input": "mesh",
+        "name": "points",
+        "position": "vertices"
+      }
+    },
+    {
+      "delaunay": {
+        "cell_dimension": 3,
+        "input": "points",
+        "output": "background",
+        "position": "vertices"
+      }
+    },
+    {
+      "triangle_insertion": {
+        "background": "background",
+        "background_position": "vertices",
+        "input": "mesh",
+        "input_position": "vertices",
+        "name": "mm"
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "mm",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "to_points": {
-                "add_box": true,
-                "box_scale": 1.5,
-                "input": "mesh",
-                "name": "points",
-                "position": "vertices"
-            }
+        "file": "background",
+        "input": "background"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "delaunay": {
-                "cell_dimension": 3,
-                "input": "points",
-                "output": "background",
-                "position": "vertices"
-            }
+        "file": "meshes_",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "triangle_insertion": {
-                "background": "background",
-                "background_position": "vertices",
-                "input": "mesh",
-                "input_position": "vertices",
-                "name": "mm"
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "mm",
-                "name": "meshes"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "background",
-                "input": "background"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "meshes_",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "meshes_0",
-                "input": "meshes_0"
-            }
-        }
-    ],
-    "tests": {
-        "skip_check": true,
-        "edges": [
-            64341,
-            19171
-        ],
-        "faces": [
-            111004,
-            12753
-        ],
-        "meshes": [
-            "meshes_",
-            "meshes_0"
-        ],
-        "tetrahedra": [
-            55499,
-            0
-        ],
-        "vertices": [
-            8988,
-            6407
-        ]
+        "file": "meshes_0",
+        "input": "meshes_0"
+      }
     }
+  ],
+  "tests": {
+    "skip_check": true,
+    "edges": [
+      64341,
+      19171
+    ],
+    "faces": [
+      111004,
+      12753
+    ],
+    "meshes": [
+      "meshes_",
+      "meshes_0"
+    ],
+    "tetrahedra": [
+      55499,
+      0
+    ],
+    "vertices": [
+      8988,
+      6407
+    ]
+  }
 }

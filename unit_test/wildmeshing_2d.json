@@ -1,98 +1,98 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/2dmesh.msh",
-                "ignore_z": true,
-                "name": "input"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "meshes/2dmesh.msh",
+        "ignore_z": true,
+        "name": "input"
+      }
+    },
+    {
+      "multimesh": {
+        "mesh": "input",
+        "name": "main_mesh",
+        "position": "vertices",
+        "type": "boundary"
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "main_mesh",
+        "name": "tmp"
+      }
+    },
+    {
+      "wildmeshing": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "multimesh": {
-                "mesh": "input",
-                "name": "main_mesh",
-                "position": "vertices",
-                "type": "boundary"
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "main_mesh",
-                "name": "tmp"
-            }
-        },
-        {
-            "wildmeshing": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "envelopes": [
-                    {
-                        "constrained_position": {
-                            "mesh": "main_mesh.is_boundary",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "tmp_0",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    }
-                ],
-                "input": "main_mesh",
-                "output": "triwild",
-                "pass_through": [
-                    "is_boundary"
-                ],
-                "target_edge_length": 0.01
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "triwild",
-                "name": "meshes"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "surface",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "edges",
-                "input": "meshes_0"
-            }
-        }
-    ],
-    "tests": {
-        "skip_check": true,
-        "edges": [
-            7941,
-            270
+        "envelopes": [
+          {
+            "constrained_position": {
+              "mesh": "main_mesh.is_boundary",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "tmp_0",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          }
         ],
-        "faces": [
-            5204,
-            0
+        "input": "main_mesh",
+        "output": "triwild",
+        "pass_through": [
+          "is_boundary"
         ],
-        "meshes": [
-            "meshes_",
-            "meshes_0"
-        ],
-        "tetrahedra": [
-            0,
-            0
-        ],
-        "vertices": [
-            2738,
-            270
-        ]
+        "target_edge_length": 0.01
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "triwild",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
+        },
+        "file": "surface",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
+        },
+        "file": "edges",
+        "input": "meshes_0"
+      }
     }
+  ],
+  "tests": {
+    "skip_check": true,
+    "edges": [
+      7941,
+      270
+    ],
+    "faces": [
+      5204,
+      0
+    ],
+    "meshes": [
+      "meshes_",
+      "meshes_0"
+    ],
+    "tetrahedra": [
+      0,
+      0
+    ],
+    "vertices": [
+      2738,
+      270
+    ]
+  }
 }

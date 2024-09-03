@@ -35,8 +35,8 @@
           "position": "vertices"
         },
         "input": "mm",
-        "iterations": 1,
-        "length_rel": 1,
+        "iterations": 10,
+        "length_rel": 0.005,
         "lock_boundary": true,
         "output": "test"
       }
@@ -52,7 +52,7 @@
         "attributes": {
           "position": "vertices"
         },
-        "file": "isotropic_mm_",
+        "file": "isotropic_mm_timing_",
         "input": "meshes_"
       }
     },
@@ -61,51 +61,31 @@
         "attributes": {
           "position": "vertices"
         },
-        "file": "isotropic_mm_0",
+        "file": "isotropic_mm_timing_0",
         "input": "meshes_0"
       }
     }
   ],
   "tests": {
     "edges": [
-      5607,
-      1134,
-      1134,
-      5607,
-      1134,
-      5607
+      62415,
+      62415
     ],
     "faces": [
-      3576,
-      594,
-      594,
-      3576,
-      594,
-      3576
+      41448,
+      41448
     ],
     "meshes": [
-      "mesh",
       "meshes_",
-      "meshes_0",
-      "mm",
-      "test",
-      "uv"
+      "meshes_0"
     ],
     "tetrahedra": [
-      0,
-      0,
-      0,
-      0,
       0,
       0
     ],
     "vertices": [
-      2032,
-      541,
-      541,
-      2032,
-      541,
-      2032
+      20968,
+      20968
     ]
   }
 }
