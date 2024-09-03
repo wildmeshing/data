@@ -1,27 +1,27 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "meshes/small.msh",
-                "name": "mesh"
-            }
-        }
-    ],
-    "tests": {
-        "edges": [
-            183
-        ],
-        "faces": [
-            108
-        ],
-        "meshes": [
-            "mesh"
-        ],
-        "tetrahedra": [
-            0
-        ],
-        "vertices": [
-            71
-        ]
+  "components": [
+    {
+      "input": {
+        "file": "meshes/small.msh",
+        "name": "mesh"
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      183
+    ],
+    "faces": [
+      108
+    ],
+    "meshes": [
+      "mesh"
+    ],
+    "tetrahedra": [
+      0
+    ],
+    "vertices": [
+      71
+    ]
+  }
 }

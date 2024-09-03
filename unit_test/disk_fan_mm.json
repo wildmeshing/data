@@ -1,88 +1,88 @@
 {
-    "components": [
-        {
-            "procedural": {
-                "fan": {
-                    "coordinates": {
-                        "degrees": [
-                            0.0,
-                            180.0
-                        ],
-                        "name": "vertices",
-                        "radius": 2.0
-                    },
-                    "size": 10
-                },
-                "name": "fan",
-                "type": "triangle_fan"
-            }
+  "components": [
+    {
+      "procedural": {
+        "fan": {
+          "coordinates": {
+            "degrees": [
+              0.0,
+              180.0
+            ],
+            "name": "vertices",
+            "radius": 2.0
+          },
+          "size": 10
         },
-        {
-            "procedural": {
-                "disk": {
-                    "coordinates": {
-                        "name": "vertices",
-                        "radius": 2.0
-                    },
-                    "size": 10
-                },
-                "name": "disk",
-                "type": "disk"
-            }
+        "name": "fan",
+        "type": "triangle_fan"
+      }
+    },
+    {
+      "procedural": {
+        "disk": {
+          "coordinates": {
+            "name": "vertices",
+            "radius": 2.0
+          },
+          "size": 10
         },
-        {
-            "multimesh": {
-                "child": "fan",
-                "name": "mm",
-                "parent": "disk",
-                "type": "uv"
-            }
+        "name": "disk",
+        "type": "disk"
+      }
+    },
+    {
+      "multimesh": {
+        "child": "fan",
+        "name": "mm",
+        "parent": "disk",
+        "type": "uv"
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "mm",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "get_all_meshes": {
-                "input": "mm",
-                "name": "meshes"
-            }
+        "file": "main",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "main",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "uv",
-                "input": "meshes_0"
-            }
-        }
-    ],
-    "tests": {
-        "edges": [
-            20,
-            21
-        ],
-        "faces": [
-            10,
-            10
-        ],
-        "meshes": [
-            "meshes_",
-            "meshes_0"
-        ],
-        "tetrahedra": [
-            0,
-            0
-        ],
-        "vertices": [
-            11,
-            12
-        ]
+        "file": "uv",
+        "input": "meshes_0"
+      }
     }
+  ],
+  "tests": {
+    "edges": [
+      20,
+      21
+    ],
+    "faces": [
+      10,
+      10
+    ],
+    "meshes": [
+      "meshes_",
+      "meshes_0"
+    ],
+    "tetrahedra": [
+      0,
+      0
+    ],
+    "vertices": [
+      11,
+      12
+    ]
+  }
 }
