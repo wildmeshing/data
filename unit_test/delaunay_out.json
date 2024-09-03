@@ -1,0 +1,19 @@
+{
+    "cells": 360,
+    "edges": 444,
+    "faces": 726,
+    "input": {
+        "add_box": true,
+        "add_grid": false,
+        "box_scale": 1.5,
+        "grid_spacing": 0.1,
+        "input": "meshes/small3d.msh",
+        "min_dist": -1,
+        "output": "tets",
+        "output_pos_attr_name": "vertices",
+        "remove_duplicates": false,
+        "report": "delaunay_out.json",
+        "root": ""
+    },
+    "vertices": 79
+}
