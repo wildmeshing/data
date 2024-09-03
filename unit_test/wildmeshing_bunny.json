@@ -1,188 +1,188 @@
 {
-    "components": [
-        {
-            "input": {
-                "file": "./meshes/bunny_small.msh",
-                "name": "input"
-            }
+  "components": [
+    {
+      "input": {
+        "file": "./meshes/bunny_small.msh",
+        "name": "input"
+      }
+    },
+    {
+      "to_points": {
+        "add_box": false,
+        "box_scale": 0.05,
+        "input": "input",
+        "name": "points",
+        "position": "vertices",
+        "add_grid": true,
+        "grid_spacing": 0.05,
+        "min_dist": 0,
+        "remove_duplicates": true
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "to_points": {
-                "add_box": false,
-                "box_scale": 0.05,
-                "input": "input",
-                "name": "points",
-                "position": "vertices",
-                "add_grid": true,
-                "grid_spacing": 0.05,
-                "min_dist": 0,
-                "remove_duplicates": true
-            }
+        "file": "pts",
+        "input": "points"
+      }
+    },
+    {
+      "delaunay": {
+        "cell_dimension": 3,
+        "input": "points",
+        "output": "background",
+        "position": "vertices"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "pts",
-                "input": "points"
-            }
+        "file": "after_delaunay",
+        "input": "background"
+      }
+    },
+    {
+      "triangle_insertion": {
+        "background": "background",
+        "background_position": "vertices",
+        "input": "input",
+        "input_position": "vertices",
+        "name": "mm"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "delaunay": {
-                "cell_dimension": 3,
-                "input": "points",
-                "output": "background",
-                "position": "vertices"
-            }
+        "file": "after_insertion",
+        "input": "mm"
+      }
+    },
+    {
+      "winding_number": {
+        "input": "mm",
+        "filtering_base": "mm.surface_mesh",
+        "output": "bunny_small_filterd"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "after_delaunay",
-                "input": "background"
-            }
+        "file": "bunny_small_filterd",
+        "input": "bunny_small_filterd"
+      }
+    },
+    {
+      "wildmeshing": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "triangle_insertion": {
-                "background": "background",
-                "background_position": "vertices",
-                "input": "input",
-                "input_position": "vertices",
-                "name": "mm"
-            }
+        "envelopes": [
+          {
+            "constrained_position": {
+              "mesh": "mm.surface_mesh",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "mm.surface_mesh",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          },
+          {
+            "constrained_position": {
+              "mesh": "mm.open_boundary",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "mm.open_boundary",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          },
+          {
+            "constrained_position": {
+              "mesh": "mm.nonmanifold_edges",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "mm.nonmanifold_edges",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          },
+          {
+            "constrained_position": {
+              "mesh": "mm.bbox",
+              "name": "vertices"
+            },
+            "geometry": {
+              "mesh": "mm.bbox",
+              "position": "vertices"
+            },
+            "thickness": 0.001
+          }
+        ],
+        "input": "mm",
+        "output": "tetwild",
+        "pass_through": [
+          "surface",
+          "open_boundary",
+          "nonmanifold_edge",
+          "nonmanifold_vertex",
+          "bbox"
+        ],
+        "target_edge_length": 0.05,
+        "target_max_amips": 100,
+        "passes": 3
+      }
+    },
+    {
+      "get_all_meshes": {
+        "input": "tetwild",
+        "name": "meshes"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "after_insertion",
-                "input": "mm"
-            }
+        "file": "bunny_small",
+        "input": "meshes_"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "winding_number": {
-                "input": "mm",
-                "filtering_base": "mm.surface_mesh",
-                "output": "bunny_small_filterd"
-            }
+        "file": "bunny_small_surface",
+        "input": "meshes_0"
+      }
+    },
+    {
+      "winding_number": {
+        "input": "meshes_",
+        "filtering_base": "meshes_0",
+        "output": "bunny_small_filterd_final"
+      }
+    },
+    {
+      "output": {
+        "attributes": {
+          "position": "vertices"
         },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "bunny_small_filterd",
-                "input": "bunny_small_filterd"
-            }
-        },
-        {
-            "wildmeshing": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "envelopes": [
-                    {
-                        "constrained_position": {
-                            "mesh": "mm.surface_mesh",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "mm.surface_mesh",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    },
-                    {
-                        "constrained_position": {
-                            "mesh": "mm.open_boundary",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "mm.open_boundary",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    },
-                    {
-                        "constrained_position": {
-                            "mesh": "mm.nonmanifold_edges",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "mm.nonmanifold_edges",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    },
-                    {
-                        "constrained_position": {
-                            "mesh": "mm.bbox",
-                            "name": "vertices"
-                        },
-                        "geometry": {
-                            "mesh": "mm.bbox",
-                            "position": "vertices"
-                        },
-                        "thickness": 0.001
-                    }
-                ],
-                "input": "mm",
-                "output": "tetwild",
-                "pass_through": [
-                    "surface", 
-                    "open_boundary",
-                    "nonmanifold_edge",
-                    "nonmanifold_vertex",
-                    "bbox"
-                ],
-                "target_edge_length": 0.05,
-                "target_max_amips": 100,
-                "passes": 3
-            }
-        },
-        {
-            "get_all_meshes": {
-                "input": "tetwild",
-                "name": "meshes"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "bunny_small",
-                "input": "meshes_"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "bunny_small_surface",
-                "input": "meshes_0"
-            }
-        },
-        {
-            "winding_number": {
-                "input": "meshes_",
-                "filtering_base": "meshes_0",
-                "output": "bunny_small_filterd_final"
-            }
-        },
-        {
-            "output": {
-                "attributes": {
-                    "position": "vertices"
-                },
-                "file": "bunny_small_filterd_final",
-                "input": "bunny_small_filterd_final"
-            }
-        }
-    ]
+        "file": "bunny_small_filterd_final",
+        "input": "bunny_small_filterd_final"
+      }
+    }
+  ]
 }
