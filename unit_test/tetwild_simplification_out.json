@@ -1,0 +1,21 @@
+{
+    "cells": 0,
+    "edges": 4268,
+    "faces": 2823,
+    "input": {
+        "duplicate_tol": -1,
+        "input": "meshes/open_mesh.msh",
+        "main_eps": 0.002,
+        "output": "simplified",
+        "relative": true,
+        "report": "tetwild_simplification_out.json",
+        "root": "",
+        "sample_envelope": true
+    },
+    "stats": {
+        "cleanup_time": 0.018294208,
+        "collapsing_time": 19.66828975,
+        "swapping_time": 0.067338042
+    },
+    "vertices": 1445
+}
