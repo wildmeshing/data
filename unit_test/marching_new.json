@@ -1,0 +1,13 @@
+{
+  "input": "meshes/sphere_regularized.hdf5",
+  "pos_attr_name": "vertices",
+  "vertex_label": "vertex_tag",
+  "edge_label": "edge_tag",
+  "face_label": "face_tag",
+  "input_values": [0, 1],
+  "output_value": 2,
+  "pass_through": ["tag"],
+  "output": "marching_result",
+  "report": "marching_report.json",
+  "input_path": ""
+}

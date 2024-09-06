@@ -1,0 +1,26 @@
+{
+    "input": {
+        "edge_label": "edge_tag",
+        "face_label": "face_tag",
+        "input": "meshes/sphere_regularized.hdf5",
+        "input_path": "",
+        "input_values": [
+            0,
+            1
+        ],
+        "output": "marching_result",
+        "output_value": 2,
+        "pass_through": [
+            "tag"
+        ],
+        "pos_attr_name": "vertices",
+        "report": "marching_out.json",
+        "vertex_label": "vertex_tag"
+    },
+    "stats": {
+        "edges": 39603,
+        "tets": 33440,
+        "triangles": 67411,
+        "vertices": 5633
+    }
+}
