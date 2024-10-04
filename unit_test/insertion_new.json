@@ -1,0 +1,8 @@
+{
+    "bg_mesh": "meshes/sphere_coarse.msh",
+    "tri_mesh": "meshes/bunny_small.msh",
+    "output": "insertion",
+    "track_submeshes": true,
+    "round": true,
+    "report": "insertion_oracle.json"
+}

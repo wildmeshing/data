@@ -1,0 +1,18 @@
+{
+    "cells": 4713950,
+    "edges": 5318434,
+    "faces": 9428363,
+    "input": {
+        "bg_mesh": "meshes/sphere_coarse.msh",
+        "bg_pos_attr_name": "vertices",
+        "make_child_free": false,
+        "output": "insertion",
+        "report": "insertion_oracle.json",
+        "root": "",
+        "round": true,
+        "track_submeshes": true,
+        "tri_mesh": "meshes/bunny_small.msh",
+        "tri_pos_attr_name": "vertices"
+    },
+    "vertices": 604022
+}
