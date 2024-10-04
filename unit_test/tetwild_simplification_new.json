@@ -1,0 +1,7 @@
+{
+    "input": "meshes/open_mesh.msh",
+    "output": "simplified",
+    "sample_envelope": true,
+    "main_eps": 2e-3,
+    "report": "tetwild_simplification_out.json"
+}
