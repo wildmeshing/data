@@ -1,0 +1,17 @@
+{
+    "input": {
+        "envelope_size": 0.001,
+        "input": "meshes/bunny_small.msh",
+        "input_path": "",
+        "length_rel": 0.1,
+        "lock_boundary": false,
+        "output": "bunny_small_coarse",
+        "report": "shortest_edge_collapse_out.json"
+    },
+    "stats": {
+        "edges": 9816,
+        "tets": 0,
+        "triangles": 6544,
+        "vertices": 3274
+    }
+}

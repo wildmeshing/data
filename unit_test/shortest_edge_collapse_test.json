@@ -1,0 +1,5 @@
+{
+  "input": "meshes/bunny_small.msh",
+  "output": "bunny_small_coarse",
+  "report": "shortest_edge_collapse_out.json"
+}
