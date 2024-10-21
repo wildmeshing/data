@@ -1,0 +1,8 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarseb",
+    "envelope_size": -1,
+    "length_rel": 0.1,
+    "use_multimesh": "boundary",
+    "report": "sec_volume_boundary_out.json"
+}

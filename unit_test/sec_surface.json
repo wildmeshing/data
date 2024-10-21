@@ -1,0 +1,7 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmesh",
+    "envelope_size": -1,
+    "length_rel": 0.1,
+    "report": "sec_surface_out.json"
+}

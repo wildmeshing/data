@@ -1,0 +1,6 @@
+{
+    "input": "meshes/line.msh",
+    "output": "line",
+    "envelope_size": -1,
+    "length_rel": 0.1
+}

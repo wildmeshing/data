@@ -1,0 +1,8 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshb",
+    "envelope_size": -1,
+    "length_rel": 0.1,
+    "use_multimesh": "boundary",
+    "report": "sec_surface_boundary_out.json"
+}

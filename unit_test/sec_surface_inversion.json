@@ -1,0 +1,8 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshi",
+    "envelope_size": -1,
+    "length_rel": 100,
+    "check_inversion": true,
+    "report": "sec_surface_inversion_out.json"
+}

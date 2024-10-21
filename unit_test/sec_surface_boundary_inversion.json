@@ -1,0 +1,9 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshb_inversion",
+    "envelope_size": -1,
+    "length_rel": 100,
+    "use_multimesh": "boundary",
+    "check_inversion": true,
+    "report": "sec_surface_boundary_inversion_out.json"
+}

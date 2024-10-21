@@ -1,0 +1,7 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarse",
+    "envelope_size": -1,
+    "length_rel": 0.1,
+    "report": "sec_volume_out.json"
+}
