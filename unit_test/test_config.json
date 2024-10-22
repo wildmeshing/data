@@ -1,0 +1,38 @@
+{
+"delaunay_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/aa0abd4658bb064515ee7cc2a7be87aa",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/delaunay/delaunay_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/aa0abd4658bb064515ee7cc2a7be87aa"
+        },
+"marching_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/f78680b10f59f07584a416075be84aa5",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/marching/marching_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/f78680b10f59f07584a416075be84aa5"
+        },
+"tw_simplification_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/86c6dde253e4bebc43d6865afb16a5ac",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/tetwild_simplification/tw_simplification_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/86c6dde253e4bebc43d6865afb16a5ac"
+        },
+"cdt_sec_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/54b59e3f2e2da716a892c4d9550dd200",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/cdt_sec/cdt_sec_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/54b59e3f2e2da716a892c4d9550dd200"
+        },
+"shortest_edge_collapse_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/8326f3d4b7ed01afc4bc8ebb314b6719",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/shortest_edge_collapse/shortest_edge_collapse_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/8326f3d4b7ed01afc4bc8ebb314b6719"
+        },
+"insertion_app":
+        {
+        "data_folder":"/Users/teseo/.cache/CPM/wmtk_data/3a86f4675bb6f59ee70e4c1b9af84225",
+        "config_file":"/Users/teseo/data/wildmeshing/wildmeshing-toolkit/applications/insertion/insertion_test_config.json",
+        "config_folder":"/Users/teseo/.cache/CPM/wmtk_data/3a86f4675bb6f59ee70e4c1b9af84225"
+        },
+"skip":{}}

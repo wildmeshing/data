@@ -1,0 +1,19 @@
+{
+    "input": {
+        "check_inversion": false,
+        "envelope_size": -1,
+        "input": "meshes/2dmesh.msh",
+        "input_path": "",
+        "length_rel": 100,
+        "lock_boundary": false,
+        "output": "2dmeshb_extreme",
+        "report": "sec_surface_boundary_extreme_out.json",
+        "use_multimesh": "boundary"
+    },
+    "stats": {
+        "edges": 1329,
+        "tets": 0,
+        "triangles": 885,
+        "vertices": 445
+    }
+}

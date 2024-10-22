@@ -1,0 +1,19 @@
+{
+    "input": {
+        "check_inversion": false,
+        "envelope_size": -1,
+        "input": "meshes/2dmesh.msh",
+        "input_path": "",
+        "length_rel": 0.1,
+        "lock_boundary": false,
+        "output": "2dmeshi",
+        "report": "sec_surface_interior_out.json",
+        "use_multimesh": "interior"
+    },
+    "stats": {
+        "edges": 74,
+        "tets": 0,
+        "triangles": 43,
+        "vertices": 32
+    }
+}
