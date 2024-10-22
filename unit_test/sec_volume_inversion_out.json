@@ -1,0 +1,19 @@
+{
+    "input": {
+        "check_inversion": true,
+        "envelope_size": -1,
+        "input": "meshes/sphere_coarse.msh",
+        "input_path": "",
+        "length_rel": 100,
+        "lock_boundary": false,
+        "output": "sphere_coarsei",
+        "report": "sec_volume_inversion_out.json",
+        "use_multimesh": "none"
+    },
+    "stats": {
+        "edges": 6,
+        "tets": 1,
+        "triangles": 4,
+        "vertices": 4
+    }
+}
