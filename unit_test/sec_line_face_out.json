@@ -1,0 +1,19 @@
+{
+    "input": {
+        "check_inversion": false,
+        "envelope_size": -1,
+        "input": "meshes/face_line.msh",
+        "input_path": "",
+        "length_rel": 0.1,
+        "lock_boundary": true,
+        "output": "face_line",
+        "report": "sec_line_face_out.json",
+        "use_multimesh": "none"
+    },
+    "stats": {
+        "edges": 21,
+        "tets": 0,
+        "triangles": 0,
+        "vertices": 40
+    }
+}

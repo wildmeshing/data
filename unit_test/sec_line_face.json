@@ -3,5 +3,6 @@
     "output": "face_line",
     "lock_boundary": true,
     "envelope_size": -1,
-    "length_rel": 0.1
+    "length_rel": 0.1,
+    "report": "sec_line_face_out.json"
 }
