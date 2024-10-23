@@ -1,0 +1,9 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarsee",
+    "envelope_size": 0.01,
+    "length_rel": 100,
+    "check_inversion": true,
+    "use_multimesh": "interior",
+    "report": "sec_volume_envelope_out.json"
+}
