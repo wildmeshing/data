@@ -1,0 +1,9 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshe",
+    "envelope_size": 0.001,
+    "length_rel": 100,
+    "check_inversion": true,
+    "use_multimesh": "interior",
+    "report": "sec_surface_envelope_out.json"
+}

@@ -1,0 +1,9 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshl",
+    "envelope_size": -1,
+    "lock_boundary": true,
+    "length_rel": 100,
+    "check_inversion": true,
+    "report": "sec_surface_lock_out.json"
+}

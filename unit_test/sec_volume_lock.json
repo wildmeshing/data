@@ -1,0 +1,9 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarsel",
+    "envelope_size": -1,
+    "length_rel": 100,
+    "lock_boundary": true,
+    "check_inversion": true,
+    "report": "sec_volume_lock_out.json"
+}
