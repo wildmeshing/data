@@ -1,0 +1,7 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshb_extreme",
+    "length_rel": 0.0002,
+    "use_multimesh": "boundary",
+    "report": "les_surface_boundary_extreme_out.json"
+}

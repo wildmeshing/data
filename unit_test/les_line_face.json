@@ -1,0 +1,6 @@
+{
+    "input": "meshes/face_line.msh",
+    "output": "face_line",
+    "length_rel": 0.001,
+    "report": "les_line_face_out.json"
+}

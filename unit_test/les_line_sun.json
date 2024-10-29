@@ -1,0 +1,6 @@
+{
+    "input": "meshes/sun_line.msh",
+    "output": "sun_line",
+    "length_rel": 0.001,
+    "report": "les_line_sun_out.json"
+}

@@ -1,0 +1,7 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmeshi",
+    "length_rel": 0.02,
+    "use_multimesh": "interior",
+    "report": "les_surface_interior_out.json"
+}

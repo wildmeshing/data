@@ -1,0 +1,6 @@
+{
+    "input": "meshes/2dmesh.msh",
+    "output": "2dmesh",
+    "length_rel": 0.02,
+    "report": "les_surface_out.json"
+}

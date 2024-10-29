@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/2dmesh.msh",
+        "input_path": "",
+        "length_rel": 0.0002,
+        "output": "2dmeshb_extreme",
+        "report": "les_surface_boundary_extreme_out.json",
+        "use_multimesh": "boundary"
+    },
+    "stats": {
+        "edges": 42539,
+        "tets": 0,
+        "triangles": 21490,
+        "vertices": 21050
+    }
+}

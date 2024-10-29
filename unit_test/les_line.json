@@ -1,0 +1,6 @@
+{
+    "input": "meshes/line.msh",
+    "output": "line",
+    "length_rel": 0.001,
+    "report": "les_line_out.json"
+}

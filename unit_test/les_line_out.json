@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/line.msh",
+        "input_path": "",
+        "length_rel": 0.001,
+        "output": "line",
+        "report": "les_line_out.json",
+        "use_multimesh": "none"
+    },
+    "stats": {
+        "edges": 1584,
+        "tets": 0,
+        "triangles": 0,
+        "vertices": 1585
+    }
+}

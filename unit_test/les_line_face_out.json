@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/face_line.msh",
+        "input_path": "",
+        "length_rel": 0.001,
+        "output": "face_line",
+        "report": "les_line_face_out.json",
+        "use_multimesh": "none"
+    },
+    "stats": {
+        "edges": 3685,
+        "tets": 0,
+        "triangles": 0,
+        "vertices": 3704
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/sun_line.msh",
+        "input_path": "",
+        "length_rel": 0.001,
+        "output": "sun_line",
+        "report": "les_line_sun_out.json",
+        "use_multimesh": "none"
+    },
+    "stats": {
+        "edges": 7248,
+        "tets": 0,
+        "triangles": 0,
+        "vertices": 7293
+    }
+}

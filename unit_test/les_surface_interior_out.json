@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/2dmesh.msh",
+        "input_path": "",
+        "length_rel": 0.02,
+        "output": "2dmeshi",
+        "report": "les_surface_interior_out.json",
+        "use_multimesh": "interior"
+    },
+    "stats": {
+        "edges": 7964,
+        "tets": 0,
+        "triangles": 5242,
+        "vertices": 2723
+    }
+}

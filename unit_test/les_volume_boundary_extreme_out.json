@@ -1,0 +1,16 @@
+{
+    "input": {
+        "input": "meshes/sphere_coarse.msh",
+        "input_path": "",
+        "length_rel": 0.02,
+        "output": "sphere_coarse_extreme",
+        "report": "les_volume_boundary_extreme_out.json",
+        "use_multimesh": "boundary"
+    },
+    "stats": {
+        "edges": 42843,
+        "tets": 24098,
+        "triangles": 57285,
+        "vertices": 9657
+    }
+}

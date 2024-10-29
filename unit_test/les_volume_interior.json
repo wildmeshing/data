@@ -1,0 +1,7 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarsei",
+    "length_rel": 0.05,
+    "use_multimesh": "interior",
+    "report": "les_volume_interior_out.json"
+}

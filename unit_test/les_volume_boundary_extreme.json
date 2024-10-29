@@ -1,0 +1,7 @@
+{
+    "input": "meshes/sphere_coarse.msh",
+    "output": "sphere_coarse_extreme",
+    "length_rel": 0.02,
+    "use_multimesh": "boundary",
+    "report": "les_volume_boundary_extreme_out.json"
+}
