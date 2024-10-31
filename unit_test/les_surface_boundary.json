@@ -1,7 +1,7 @@
 {
     "input": "meshes/2dmesh.msh",
     "output": "2dmeshb",
-    "length_rel": 0.001,
+    "length_rel": 0.005,
     "use_multimesh": "boundary",
     "report": "les_surface_boundary_out.json"
 }
