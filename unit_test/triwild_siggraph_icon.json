@@ -1,0 +1,8 @@
+{
+    "input": "meshes/siggraph_icon.msh",
+    "output": "triwild_siggraph_icon",
+    "envelope_size": 1e-3,
+    "target_edge_length": 0.05,
+    "max_passes": 5,
+    "report":"triwild_siggraph_icon_out.json"
+}
