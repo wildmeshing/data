@@ -1,0 +1,1 @@
+{"cells":896,"edges":1370,"input":{"envelope_size":0.001,"input":"meshes/siggraph_icon.msh","intermediate_output":false,"max_passes":5,"output":"triwild_siggraph_icon","report":"triwild_siggraph_icon_out.json","root":"","target_edge_length":0.05,"target_max_amips":10.0},"vertices":475}
