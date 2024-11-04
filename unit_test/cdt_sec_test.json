@@ -1,7 +1,0 @@
-{
-    "input": "meshes/214250.msh",
-    "output": "214250_cdt_sec",
-    "envelope_size": 0.001,
-    "length_rel":0.1,
-    "report":"cdt_sec_out.json"
-}

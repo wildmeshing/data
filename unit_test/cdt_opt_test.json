@@ -1,0 +1,7 @@
+{
+    "input": "meshes/77917.msh",
+    "output": "77917_cdt_opt",
+    "envelope_size": 0.001,
+    "length_rel":0.1,
+    "report":"cdt_opt_out.json"
+}
