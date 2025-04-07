@@ -1,0 +1,7 @@
+{
+  "input": "../tetwild_fig8_mid.msh",
+  "output": "out.msh",
+  "tag_name": "in/out",
+  "embed_interfaces": true,
+  "report": "simplicial_embedding_report.json"
+}

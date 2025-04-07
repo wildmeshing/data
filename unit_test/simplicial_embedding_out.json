@@ -1,0 +1,20 @@
+{
+  "edges_after": 285677,
+  "edges_before": 282430,
+  "faces_after": 485115,
+  "faces_before": 479713,
+  "input": {
+    "embed_interfaces": true,
+    "input": "../tetwild_fig8_mid.msh",
+    "output": "out.msh",
+    "report": "simplicial_embedding_report.json",
+    "root": "",
+    "tag_default_value": -1,
+    "tag_name": "in/out",
+    "tag_value": 0
+  },
+  "tets_after": 241827,
+  "tets_before": 239126,
+  "vertices_after": 42390,
+  "vertices_before": 41844
+}
