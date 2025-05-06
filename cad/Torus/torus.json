@@ -1,0 +1,14 @@
+{
+    "components": [
+   
+        {
+            "cad_meshing": {
+                "input": "Torus.hdf5",
+                "output": "sample_results/Torus/",
+                "edge_rgb_threshold":1e-2,
+                "face_rgb_threshold":5e-2,
+                "feature_refine_relative_threshold":5e-1
+            }
+        }
+    ]
+}

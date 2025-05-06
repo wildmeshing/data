@@ -1,0 +1,14 @@
+{
+    "components": [
+   
+        {
+            "cad_meshing": {
+                "input": "Cylinder.hdf5",
+                "output": "sample_results/Cylinder/",
+                "edge_rgb_threshold":1e-1,
+                "face_rgb_threshold":5e-1,
+                "feature_refine_relative_threshold":5e-1
+            }
+        }
+    ]
+}

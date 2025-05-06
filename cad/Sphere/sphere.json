@@ -1,0 +1,14 @@
+{
+    "components": [
+   
+        {
+            "cad_meshing": {
+                "input": "Sphere.hdf5",
+                "output": "sample_results/Sphere/transform_",
+                "edge_rgb_threshold":1e-2,
+                "face_rgb_threshold":5e-2,
+                "feature_refine_relative_threshold":5e-1
+            }
+        }
+    ]
+}
